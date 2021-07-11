@@ -1,0 +1,27 @@
+### Flux test 01
+GET localhost:8080/students
+Content-Type: application/json
+
+### Flux test02
+GET localhost:8080/students/orderByGpa
+Content-Type: application/json
+
+
+
+###
+POST localhost:8080/students/save
+Content-Type: application/json
+
+{
+  "name": "carrot",
+  "studentNumber": 223456789,
+  "email": "carrot@example.com",
+  "courses": [
+	"course1",
+	"courseB",
+	"courseC"
+  ],
+  "gpa": 10.0
+}
+
+
